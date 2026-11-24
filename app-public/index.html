@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Лимит</title>
+<meta name="theme-color" content="#202020">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Лимит">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="preload" href="fonts/roboto-condensed-cyrillic.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="app"></main>
+<nav class="tabbar" id="tabbar"><div class="tabbar-in">
+  <button class="tab" data-go="home"><i></i>Главная</button>
+  <button class="tab" data-go="journal"><i></i>Журнал</button>
+  <button class="tab" data-go="stats"><i></i>Анализ</button>
+  <button class="tab" data-go="settings"><i></i>Настройки</button>
+</div></nav>
+<div id="lock" class="lock hidden"></div>
+<div id="toast" class="toast hidden"></div>
+<script src="history.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
